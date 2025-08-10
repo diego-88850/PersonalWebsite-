@@ -103,11 +103,11 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen">
+    <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen w-full">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-amber-200/50">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
+        <div className="w-full max-w-none px-6 py-4">
+          <div className="flex justify-between items-center max-w-6xl mx-auto">
             <div className="text-2xl font-bold text-amber-900">AC</div>
             <div className="hidden md:flex space-x-8">
               {['About', 'Experience', 'Projects', 'Contact'].map((item) => (
@@ -125,11 +125,11 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/50 to-orange-100/50" 
+      <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/50 to-orange-100/50 w-full" 
              style={{ transform: `translateY(${scrollY * 0.5}px)` }} />
         
-        <div className="text-center z-10 max-w-4xl mx-auto px-6">
+        <div className="text-center z-10 w-full max-w-4xl mx-auto px-6">
           {/* Profile Initial */}
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <span className="text-5xl font-bold text-white">A</span>
@@ -170,8 +170,8 @@ const Portfolio = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white/50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="about" className="py-20 bg-white/50 w-full">
+        <div className="w-full max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-amber-900 mb-16 text-center">About Me</h2>
           
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -220,8 +220,8 @@ const Portfolio = () => {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="experience" className="py-20 w-full">
+        <div className="w-full max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-amber-900 mb-16 text-center">Experience</h2>
           
           <div className="space-y-8">
@@ -303,8 +303,8 @@ const Portfolio = () => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-white/50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="projects" className="py-20 bg-white/50 w-full">
+        <div className="w-full max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-amber-900 mb-16 text-center">Projects</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -354,8 +354,8 @@ const Portfolio = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-20 w-full">
+        <div className="w-full max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-amber-900 mb-16 text-center">Technical Skills</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -376,8 +376,8 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-r from-amber-100 to-orange-100">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section id="contact" className="py-20 bg-gradient-to-r from-amber-100 to-orange-100 w-full">
+        <div className="w-full max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-amber-900 mb-8">Let's Connect</h2>
           <p className="text-xl text-amber-700 mb-12">
             I'm always interested in new opportunities and interesting projects.
@@ -404,9 +404,9 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-amber-900 text-center">
+      <footer className="py-8 bg-amber-900 text-center w-full">
         <p className="text-amber-100">
-          © 2025 Alonso Coronado. Built with React and ❤️
+          © 2025 Alonso Coronado.
         </p>
       </footer>
     </div>
