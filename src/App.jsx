@@ -211,7 +211,7 @@ const Portfolio = () => {
               <h3 className="text-2xl font-semibold text-amber-800 mb-6">Personal</h3>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-amber-100">
                 <p className="text-amber-700 leading-relaxed italic text-center py-8">
-                  [Hi, I’m Alonso — a rising junior at the University of Michigan studying Computer Science & Engineering with a math minor. I’m passionate about building products at scale, from data-driven systems and machine learning applications to finance-inspired models. I love taking ideas from concept to launch and creating work that delivers real, measurable results.]
+                  Hi, I’m Alonso — a rising junior at the University of Michigan studying Computer Science & Engineering with a math minor. I’m passionate about building products at scale, from data-driven systems and machine learning applications to finance-inspired models. I love taking ideas from concept to launch and creating work that delivers real, measurable results.
                 </p>
               </div>
             </div>
