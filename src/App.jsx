@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, ExternalLink, Github, Mail, Linkedin, MapPin, Calendar, Code, Database, Cloud, Brain, Download } from 'lucide-react';
+import { ChevronDown, ExternalLink, Github, Mail, Linkedin, MapPin, Calendar, Code, Database, Cloud, Brain } from 'lucide-react';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('hero');
@@ -31,7 +31,7 @@ const Portfolio = () => {
     },
     {
       title: "Weatherbot – AI Weather Emails",
-      period: "Jun 2025 – Jul 2025", 
+      period: "Jun 2025 – Jul 2025",
       tech: ["Python", "SQLite", "Streamlit"],
       description: "End-to-end weather alert system with personality-styled AI commentary and automated email delivery.",
       highlights: [
@@ -49,7 +49,7 @@ const Portfolio = () => {
       description: "Full-stack authentication system using FaceNet embeddings and cosine similarity matching.",
       highlights: [
         "React webcam UI with one-click authentication",
-        "Blink-based liveness detection heuristic", 
+        "Blink-based liveness detection heuristic",
         "Full containerized stack with CI/CD pipeline"
       ],
       github: "https://github.com/diego-88850/FaceRecog",
@@ -126,15 +126,15 @@ const Portfolio = () => {
 
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/50 to-orange-100/50 w-full" 
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-100/50 to-orange-100/50 w-full"
              style={{ transform: `translateY(${scrollY * 0.5}px)` }} />
-        
+
         <div className="text-center z-10 w-full max-w-4xl mx-auto px-6">
           {/* Profile Initial */}
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <span className="text-5xl font-bold text-white">A</span>
           </div>
-          
+
           <h1 className="text-6xl md:text-7xl font-bold text-amber-900 mb-6 leading-tight">
             Alonso Coronado
           </h1>
@@ -144,17 +144,12 @@ const Portfolio = () => {
           <p className="text-xl text-amber-800 mb-12 max-w-2xl mx-auto leading-relaxed">
             Amazon SDE Intern • Machine Learning Enthusiast • Full-Stack Developer
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <a href="mailto:diegocor@umich.edu" 
+            <a href="mailto:diegocor@umich.edu"
                className="px-8 py-4 bg-amber-600 text-white rounded-full hover:bg-amber-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2">
               <Mail className="w-5 h-5" />
               Get In Touch
-            </a>
-            <a href="/Alonso_Coronado_Resume.pdf" download="Alonso_Coronado_Resume.pdf"
-               className="px-8 py-4 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2">
-              <Download className="w-5 h-5" />
-              Download Resume
             </a>
             <a href="https://github.com/diego-88850" target="_blank" rel="noopener noreferrer"
                className="px-8 py-4 border-2 border-amber-600 text-amber-700 rounded-full hover:bg-amber-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
@@ -173,11 +168,11 @@ const Portfolio = () => {
       <section id="about" className="py-20 bg-white/50 w-full">
         <div className="w-full max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-amber-900 mb-16 text-center">About Me</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h3 className="text-2xl font-semibold text-amber-800 mb-6">Education & Experience</h3>
-              
+
               <div className="space-y-6">
                 <div className="bg-white rounded-2xl p-6 shadow-lg border border-amber-100">
                   <div className="flex items-start gap-4">
@@ -206,12 +201,12 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-2xl font-semibold text-amber-800 mb-6">Personal</h3>
               <div className="bg-white rounded-2xl p-8 shadow-lg border border-amber-100">
                 <p className="text-amber-700 leading-relaxed italic text-center py-8">
-                  Hi, I’m Alonso — a rising junior at the University of Michigan studying Computer Science & Engineering with a math minor. I’m passionate about building products at scale, from data-driven systems and machine learning applications to finance-inspired models. I love taking ideas from concept to launch and creating work that delivers real, measurable results.
+                  Hi, I'm Alonso — a rising junior at the University of Michigan studying Computer Science & Engineering with a math minor. I'm passionate about building products at scale, from data-driven systems and machine learning applications to finance-inspired models. I love taking ideas from concept to launch and creating work that delivers real, measurable results.
                 </p>
               </div>
             </div>
